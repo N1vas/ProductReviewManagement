@@ -21,11 +21,13 @@ namespace ProductReviewManagementLINQ
                 new ProductReview(){ProducID=11,UserID=1,Rating=3,Review="nice",isLike=true}
 
             };
-            foreach (var list in productReviewList)
-            {
-                Console.WriteLine("ProductID:- " + list.ProducID + " " + "UserID:- " + list.UserID
-                    + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike:- " + list.isLike);
-            }
+            //foreach (var list in productReviewList)
+            //{
+            //    Console.WriteLine("ProductID:- " + list.ProducID + " " + "UserID:- " + list.UserID
+            //        + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike:- " + list.isLike);
+            //}
+            Management management = new Management();
+            management.TopRecords(productReviewList);
         }
     }
 }
