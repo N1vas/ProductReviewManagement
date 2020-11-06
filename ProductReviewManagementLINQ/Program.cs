@@ -27,7 +27,7 @@ namespace ProductReviewManagementLINQ
             //        + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike:- " + list.isLike);
             //}
             Management management = new Management();
-            management.TopRecords(productReviewList);
+            management.SelectedRecords(productReviewList);
         }
     }
 }
